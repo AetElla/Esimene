@@ -1,163 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Dancing+Script:wght@700&family=Roboto+Slab:wght@300;400&display=swap');
 
 
-@import url('https://fonts.googleapis.com/css2?family=Gentium+Basic:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap');
-
-
-
-.gallery-image img {
-    width: 100%;
-}
-
-header .header-banner {
-    display: table;
-    background-image: url(img/header.png);
-    width: 100%;
-    height: calc(100vh - 500px);
+.header {
+    background-size: auto;
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-header .logo {
-    display: table-cell;
-    vertical-align: middle;
     text-align: center;
-    padding: 10px 0 20px 0
 }
 
-header h1 {
-    font-family: "Gentium Basic", serif;
-    font-weight: 700;
-    font-style: italic;
-    font-size: 60px;
-    color: #ffffff;
-    line-height: 70px;
+.header h1 {
     text-transform: uppercase;
-    text-shadow: 2px 2px 8px #000000;
+    color: black;
+    font-family: "Dancing Script", cursive;
 }
 
-header h2 {
-
-    font-family: "Open Sans", sans-serif;
-    font-weight: 300;
-    font-size: 15px;
-    letter-spacing: 5px;
-    color: #ffffff;
+.header h2 {
     text-transform: uppercase;
-
+    color: black;
+    font-family: "Roboto Slab", sans-serif;
 }
-
 
 header nav ul {
-
     display: block;
-    margin: 0 auto;
-    text-align: center; /*IE*/
-    width: fit-content;
-}
+    text-align: center;
 
-.disclaimer {
-    display: none;
 }
 
 header nav ul li {
-    padding:16px 16px;
-    display: inline-block;
+    padding: 5px 16px;
+    display: inline-grid;
 }
 
-nav ul li a {
-
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    letter-spacing: 3px;
-    color: #172029;
+header nav ul li a {
     text-transform: uppercase;
-    text-decoration: none;
-
+    font-family: "Big Shoulders Display";
+    color: black;
+    padding: inherit;
+    font-size: 25px;
 }
-
-footer {
-    width: calc(100% - 80px);
-    padding: 40px 40px;
-    background-color: #172029;
-    margin-top: 20px;
-    overflow: hidden;
-}
-
-footer ul {
-
-    width: fit-content;
-    float: left;
-    padding-left: 0px;
-
-}
-
-footer ul li {
-
-    display: block;
-    padding: 0 0 10px 0;
-
-}
-
-footer ul li p {
-
-    font-family: "Open Sans", sans-serif;
-    font-weight: 300;
-    font-size: 18px;
-    letter-spacing: 2px;
-    color: #ffffff;
-    text-transform: uppercase;
-
-}
-
-footer ul li a {
-
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    letter-spacing: 3px;
-    color: #ffffff;
-    text-transform: uppercase;
-    text-decoration: none;
-
-}
-
-.footer-sm {
-    width: 32px;
-    float: right;
-}
-
-.footer-sm img {
-    width: 100%;
-    margin-bottom: 10px;
-}
-
 
 hr {
-
-    color: #4f5663;
-    border-width: 2px;
-    width: 30%;
-    margin: 0 auto;
-    margin-bottom: 5px;
-
+    width: 70%;
+    color: darkslategrey;
+    border-top: 2px solid;
 }
 
+.banner-box {
+    display: flex;
+}
 
-.gallery-h2 {
+.banner {
+    max-width: 100%;
+    max-height: 100%;
+    justify-content: center;
+    margin: auto;
+}
 
-    font-family: "Gentium Basic", sans-serif;
-    font-weight: 600;
-    font-size: 28px;
-    letter-spacing: 2px;
-    padding: 10px;
-    color: #3a383d;
+.description p {
+    float: left;
+}
+
+.description h1 {
     text-transform: uppercase;
-    text-align: center;
-
+    font-family: "Big Shoulders Display";
+    padding: inherit;
 }
 
+.team {
+    display: none; 
+}
+
+.gallery-h1 {
+    text-transform: uppercase;
+    font-family: "Big Shoulders Display";
+    padding: inherit;
+    justify-content: flex-start;
+}
 
 .gallery-image {
 
@@ -195,7 +112,7 @@ hr {
 }
 
 
-.gallery-links {
+.gallery {
 
     display: flex;
     flex-flow: row wrap;
@@ -209,40 +126,49 @@ hr {
 
 }
 
-@media only screen and (min-width: 400px) {
-    
-header .header-banner {
-    height: : calc(100vh - 400px);
+.gallery img {
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 50%;
+    text-align: center;
 }
-    
-header h1 a {
-    font-size: 80px;
-}
-    
-header h2 {
-    font-size: 24px;
-    margin-top: 20px;
-}
-    
-header nav ul li {
-    padding: 16px 42px;
-}
-    
-.disclaimer {
-    display: block;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 300;
-    font-size:  18px;
-    letter-spacing: 2 px;
-    line-height: 24 px;
-    color: #ffffff;
-    text-transform: uppercase;
+
+footer {
+    width: calc(100%-80px);
+    padding: 20px 20px;
+    background-color: lightgray;
+    overflow: hidden;
+} 
+
+.footer-info {
     float: left;
-    margin: 0 80px;
+    font-size: 12px;
+    margin: 5px;
 }
+
+.social {
+    float: right;
+    flex-direction: column;
+}
+
+.icon {
+    width: 25px;
+    display: block;
+    margin: 5px;
+}
+
+@media only screen and (min-width: 950px) {
     
-.disclaimer span {
-    font-style: italic;
-}
+    .team {
+        display: block;
+        float: right;
+        width: 200px;
+    }
     
+   /* .banner {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    */
 }
+
