@@ -55,6 +55,11 @@ hr {
     margin: auto;
 }
 
+.description {
+    float: left;
+    max-height: 500px;
+}
+
 .description p {
     float: inline-block;
 }
@@ -160,9 +165,11 @@ footer {
 @media only screen and (min-width: 950px) {
     
     .team {
-        display: inline-block;
+        display: block;
         float: right;
-        width: 40%;
+        width: 50%;
+        max-height: 450px;
+        clear: right;
     }
     
     .description p {
