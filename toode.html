@@ -47,7 +47,6 @@
         <!-- navbar-light - linkide värv -->
         <!-- bg-white - taustavärv -->
         <nav class="navbar navbar-expand-lg navbar-light bg-white shadow">
-                    
             <!-- .navbar-toggler on kipplüliti -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -65,7 +64,8 @@
                             <a class="dropdown-item" href="#">Vannisoolad</a> 
                             <a class="dropdown-item" href="#">Vannipiimad</a> 
                             <a class="dropdown-item" href="#">Vannipommid</a>
-                            <a class="dropdown-item" href="list.html">Seebid ja du&scaron;igeelid</a>
+                            <!-- juurde lisatud "active" -->
+                            <a class="dropdown-item active" href="list.html">Seebid ja du&scaron;igeelid</a>
                         </div> 
                     </li> 
                     <li class="nav-item dropdown"> 
@@ -85,8 +85,10 @@
                             <a class="dropdown-item" href="#">Niisutus ja toitmine</a> 
                             <a class="dropdown-item" href="#">Koorijad ja maskid</a> 
                         </div> 
-                   </li>     
-                    <li class="nav-item"><a class="nav-link" href="meist.html">Meist</a></li>
+                   </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="meist.html">Meist</a>
+                    </li>
                 </ul>
                 
                 <!-- search -->
@@ -94,6 +96,19 @@
                     <input class="form-control mr-sm-2" type="search" placeholder="Otsi" aria-label="Search">
                     <button class="btn btn-outline-white my-2 my-sm-0" type="submit"><svg class="lnr lnr-magnifier"><use xlink:href="#lnr-magnifier"></use></svg></button>
                </form>
+                
+                <form class="form-inline mb-4">
+                    <div class="form-group" >
+                        <label for="sort" class="control-label col-lg-4">Sorteeri</label>
+                        <select class="form-control col-lg-8" id="sort">
+
+                            <option>Populaarsemad</option>
+                            <option>Odavamad enne</option>
+                            <option>Kallimad enne</option>
+
+                        </select>
+                    </div>
+                </form>
                 
             </div>
             
@@ -110,31 +125,23 @@
         <!-- Näitab kasutaja asukohta saidil, esialgu avaleht vaid-->
         <section>
             <nav aria-label="breadcrumb">
-                <ol class="breadcrumb bg-white my-2 ml-2">
+                <ol class="breadcrumb bg-white ml-2">
                     
                     <!-- MAJA это иконка с домиком, но у меня не получилось её выровнять нормально 
                     <li class="breadcrumb-item active" aria-current="page"><button class="btn btn-link btn-lg my-2 my-sm-0" type="submit"><svg class="lnr lnr-home"><use xlink:href="#lnr-home"></use></svg></button></li>
                     -->
                     
-                    <li class="breadcrumb-item active" aria-current="page">Avaleht</li>
+                    <li class="breadcrumb-item" aria-current="page"><a href="index.html">Avaleht</a></li>
+                    <li class="breadcrumb-item">Vannitooted</li>
+                    <li class="breadcrumb-item" aria-current="page">Seebid ja du&scaron;igeelid</li>
+                    <li class="breadcrumb-item active">Toode 1</li>
+                    
                 </ol>
             </nav>  
         </section>
         
-        
-        
         <!-- jumbotron --->
-        <section>
-            <div class="jumbotron">
-                <h1>Hea külastaja!</h1>
-                <p>23.02.2021-25.02.2021 oleme puhkusel ning seepe ei postita, kuid võtame uued tellimused vastu 26.02 varahommikul.
-                </p>
-                
-                <h4 id="emoji">Head vabariigi aastapäeva! <img src="estonia-flag-heart-3d-icon-32.png"/></h4>
-            </div>
-        </section>
-        
-        
+        <!-- TODO! --->
         <!-- tooted --->
         <section>
             <div class="container">
@@ -142,7 +149,7 @@
                 <h2 class="h mb-3">TOP</h2>
                 <!-- igas osas on kaart(card) -->
                 <div class="row"> 
-                    <div class="col-md-4 mb-4"> 
+                    <div class="col-md-3 mb-4"> 
                         <!-- KAART! --> 
                         <!-- border-0 kustutab raami, saab raami värvi ja kuju ka -->
                         <!-- h-100 teeb võrdseks vanem-elemendi kõrgusega -->
@@ -154,7 +161,7 @@
                             </div> 
                         </div> 
                     </div> 
-                    <div class="col-md-4 mb-4"> 
+                    <div class="col-md-3 mb-4"> 
                         <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt="" class="card-img-top"></a> 
                             <div class="card-body"> 
                                 <h5> <a href="#" class="text-dark">Toode 2</a></h5>
@@ -163,7 +170,7 @@
                             </div> 
                         </div> 
                     </div> 
-                    <div class="col-md-4 mb-4"> 
+                    <div class="col-md-3 mb-4"> 
                         <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt="" class="card-img-top"></a> 
                             <div class="card-body"> 
                                 <h5> <a href="#" class="text-dark">Toode 3</a></h5>
@@ -172,7 +179,7 @@
                             </div> 
                         </div> 
                     </div> 
-                    <div class="col-md-4 mb-4"> 
+                    <div class="col-md-3 mb-4"> 
                         <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt="" class="card-img-top"></a> 
                             <div class="card-body"> 
                                 <h5> <a href="#" class="text-dark">Toode 4</a></h5>
@@ -181,7 +188,7 @@
                             </div> 
                         </div> 
                     </div> 
-                    <div class="col-md-4 mb-4"> 
+                    <div class="col-md-3 mb-4"> 
                         <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt="" class="card-img-top"></a> 
                             <div class="card-body"> 
                                 <h5> <a href="#" class="text-dark">Toode 5</a></h5>
@@ -190,7 +197,7 @@
                             </div> 
                         </div> 
                     </div>
-                    <div class="col-md-4 mb-4"> 
+                    <div class="col-md-3 mb-4"> 
                         <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt="" class="card-img-top"></a> 
                             <div class="card-body"> 
                                 <h5> <a href="#" class="text-dark">Toode 6</a></h5>
@@ -200,6 +207,29 @@
                         </div> 
                     </div> 
                 </div>
+            </div>
+        </section>
+        
+        <!--TOODE -->
+        <section>
+
+            <div class="container">
+
+                <div class="row">
+                    <!-- img-fluid on alternatiivne lahendus "width-100%"-le -->
+                    <div class="col-lg-6"><img src="soap.png" class="img-fluid"/></div>
+
+                    <div class="col-lg-6">
+                        <h2 class="display-3"> Toode 1</h2>
+                        <h4 class="mb-3"> 15.99&#8364;</h4>
+                        <h4 class="mb-2"> Kirjeldus</h4>
+
+                        <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempor gravida ipsum, non mollis lorem luctus ac. Proin interdum tortor a metus efficitur blandit vitae vitae diam. Donec tortor leo, efficitur ultricies augue vel, consectetur ultrices lacus. Donec sollicitudin eleifend dolor et viverra. Cras ornare velit dapibus nisl gravida maximus. In vulputate semper leo non ultrices. Fusce leo sem, dapibus quis turpis sed, convallis consectetur metus. Integer eget quam sed leo pellentesque feugiat eget in urna. Praesent eu enim velit. Suspendisse eget consequat turpis.</p>
+
+                        <a href="cart.html" class="btn btn-outline-dark btn-lg mb-3">Lisa ostukorvi</a>
+                    </div>   
+                    
+                </div>  
             </div>
         </section>
         
@@ -224,15 +254,18 @@
                 </div>
                 
             </div>
-        </footer>       
+        </footer>    
         
-        <!-- LISATAKSE LÕPPU, sest muidu aeglustab lehe laadimiskiirust -->
+        
+
+        
+    
+                <!-- LISATAKSE LÕPPU, sest muidu aeglustab lehe laadimiskiirust -->
         <!-- jQuery, Popper.js, Bootstrap JS -->
-        
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        
         <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
-  </body>
+        
+    </body>
 </html>

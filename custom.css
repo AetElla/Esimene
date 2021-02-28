@@ -1,0 +1,73 @@
+.lnr {
+    display: inline-block;
+    fill: currentColor;
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.05em;
+    stroke-width: 2;
+}
+
+.lnr-cart {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.lnr-magnifier {
+    color: #000000;   
+}
+
+.lnr-phone {
+    font-size: 20px;
+}
+.lnr-envelope {
+    font-size: 20px;
+}
+ 
+
+.navbar-nav li {
+    margin-right: 3em;
+}
+
+section {
+    margin-top: 40px;
+}
+
+.kirjeldus {
+    float: left;
+    width: 40%
+}
+
+/*.team {
+    float: right;
+}*/
+
+.social {
+    height: 25px;
+    width: 25px;
+}
+
+.h {
+    text-align: center;
+}
+
+.card-body {
+    align-content: center;
+}
+
+.form-check {
+    justify-content: space-around;
+}
+
+footer {
+    margin-top: 60px;
+    padding: 5em;
+}
+
+@media only screen and (min-width: 950px){
+    
+    .carousel-slide {
+        max-width: 900px;
+    }
+    
+    
+}

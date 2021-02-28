@@ -29,7 +29,7 @@
         
         
         <!-- päis --->
-        <!-- padding y külge pidi 2? -->
+        <!-- padding -->
         <header class="py-2">
             <!-- "container-fluid" on terve ekraani laiusega, sisaldab ridu (.row), mis on jaotatud 1-12 veeruks-->
             <!-- Siin jagatud ".col my-3" (my on margin y telgepidi)-->
@@ -47,7 +47,6 @@
         <!-- navbar-light - linkide värv -->
         <!-- bg-white - taustavärv -->
         <nav class="navbar navbar-expand-lg navbar-light bg-white shadow">
-                    
             <!-- .navbar-toggler on kipplüliti -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -85,8 +84,10 @@
                             <a class="dropdown-item" href="#">Niisutus ja toitmine</a> 
                             <a class="dropdown-item" href="#">Koorijad ja maskid</a> 
                         </div> 
-                   </li>     
-                    <li class="nav-item"><a class="nav-link" href="meist.html">Meist</a></li>
+                   </li>    
+                    <li class="nav-item">
+                        <a class="nav-link" href="meist.html">Meist</a>
+                    </li>
                 </ul>
                 
                 <!-- search -->
@@ -117,91 +118,68 @@
                     -->
                     
                     <li class="breadcrumb-item active" aria-current="page">Avaleht</li>
+                    <li class="breadcrumb-item active">Meist</li>
                 </ol>
             </nav>  
         </section>
         
-        
-        
-        <!-- jumbotron --->
+ 
+        <!-- meist -->
         <section>
-            <div class="jumbotron">
-                <h1>Hea külastaja!</h1>
-                <p>23.02.2021-25.02.2021 oleme puhkusel ning seepe ei postita, kuid võtame uued tellimused vastu 26.02 varahommikul.
-                </p>
+            
+            <div id="carouselIndicators" class="carousel-slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                <li data-target="#carouselIndicator" data-slide-to="0" class="active"></li>
+                <li data-target="carouselindicator" data-slide-to="1"></li>
+                <li data-target="carouselindicator" data-slide-to="2"></li>
+                </ol>
                 
-                <h4 id="emoji">Head vabariigi aastapäeva! <img src="estonia-flag-heart-3d-icon-32.png"/></h4>
-            </div>
-        </section>
-        
-        
-        <!-- tooted --->
-        <section>
-            <div class="container">
-                <!-- Jagab read kolmeks? St iga osa = 12:3=4 veeruga -->
-                <h2 class="h mb-3">TOP</h2>
-                <!-- igas osas on kaart(card) -->
-                <div class="row"> 
-                    <div class="col-md-4 mb-4"> 
-                        <!-- KAART! --> 
-                        <!-- border-0 kustutab raami, saab raami värvi ja kuju ka -->
-                        <!-- h-100 teeb võrdseks vanem-elemendi kõrgusega -->
-                        <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt="" class="card-img-top"></a> 
-                            <div class="card-body"> 
-                                <h5> <a href="#" class="text-dark">Toode 1</a></h5>
-                                <p class="text-muted card-text"> 15.99&#8364;</p> 
-                                <a role="button" href="#" class="btn btn-outline-dark">Vaata</a>
-                            </div> 
-                        </div> 
-                    </div> 
-                    <div class="col-md-4 mb-4"> 
-                        <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt="" class="card-img-top"></a> 
-                            <div class="card-body"> 
-                                <h5> <a href="#" class="text-dark">Toode 2</a></h5>
-                                <p class="text-muted card-text"> 12.99&#8364;</p> 
-                                <a role="button" href="#" class="btn btn-outline-dark">Vaata</a>
-                            </div> 
-                        </div> 
-                    </div> 
-                    <div class="col-md-4 mb-4"> 
-                        <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt="" class="card-img-top"></a> 
-                            <div class="card-body"> 
-                                <h5> <a href="#" class="text-dark">Toode 3</a></h5>
-                                <p class="text-muted card-text"> 9.99&#8364;</p> 
-                                <a role="button" href="#" class="btn btn-outline-dark">Vaata</a>
-                            </div> 
-                        </div> 
-                    </div> 
-                    <div class="col-md-4 mb-4"> 
-                        <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt="" class="card-img-top"></a> 
-                            <div class="card-body"> 
-                                <h5> <a href="#" class="text-dark">Toode 4</a></h5>
-                                <p class="text-muted card-text"> 18.99&#8364;</p> 
-                                <a role="button" href="#" class="btn btn-outline-dark">Vaata</a>
-                            </div> 
-                        </div> 
-                    </div> 
-                    <div class="col-md-4 mb-4"> 
-                        <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt="" class="card-img-top"></a> 
-                            <div class="card-body"> 
-                                <h5> <a href="#" class="text-dark">Toode 5</a></h5>
-                                <p class="text-muted card-text"> 1.99&#8364;</p> 
-                                <a role="button" href="#" class="btn btn-outline-dark">Vaata</a>
-                            </div> 
-                        </div> 
+                <div class="carousel-inner" align="center">
+                    <div class="carousel-item active justify-content-center">
+                        <img class="d-block w-100 h-20" src="quote.png" alt="Esimene">
+                    </div>                    
+                    <div class="carousel-item">
+                        <img class="d-block w-100 h-20" src="quote2.png" alt="Teine">
                     </div>
-                    <div class="col-md-4 mb-4"> 
-                        <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt="" class="card-img-top"></a> 
-                            <div class="card-body"> 
-                                <h5> <a href="#" class="text-dark">Toode 6</a></h5>
-                                <p class="text-muted card-text"> 5.99&#8364;</p> 
-                                <a role="button" href="#" class="btn btn-outline-dark">Vaata</a>
-                            </div> 
-                        </div> 
-                    </div> 
+                    <div class="carousel-item">
+                        <img class="d-block w-100 h-20" src="quote3.png" alt="Kolmas">
+                    </div>
                 </div>
+                
+                <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Eelmine</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next" aria-hidden="true"></span>
+                    <span class="sr-only">Järgmine</span>
+                </a>
+            
             </div>
+            
+        </section>   
+        
+        <section>
+        
+            
+            
+            <div class="container">
+                
+                <h2>Missioon ja lugu</h2><br>
+                
+                <div class="row">
+                    <p class="kirjeldus">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum vel tortor ac facilisis. In iaculis pellentesque tortor, a blandit ligula finibus a. Nunc dapibus hendrerit pharetra. Nulla eget eleifend odio. Duis aliquam sed neque a pharetra. Donec congue diam at mattis maximus. Sed finibus rutrum sem at semper. Vestibulum placerat magna ante, eget rutrum est rhoncus sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean laoreet ultrices dolor in malesuada. Donec tristique tempus vulputate. Pellentesque at mauris vitae massa dictum facilisis quis id lacus. Suspendisse eu turpis eu augue vulputate placerat sed vel leo. Nunc ac justo id nisl posuere elementum vel mollis nulla. Sed eu semper nulla.
+
+                    Nullam eget congue mauris, vitae luctus odio. Sed gravida semper mi nec euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus interdum massa a dolor ultricies condimentum. Proin tempus a enim non dapibus. Pellentesque aliquet scelerisque maximus. Donec consequat sed felis eu porta. Aliquam pharetra bibendum dignissim. Morbi vehicula ullamcorper nisi, ut laoreet nulla sollicitudin in. Duis faucibus accumsan metus eget imperdiet.</p>
+            <div class="col">
+                 <img class="team" src="team.jpg"/></div>
+            </div>
+                
+            </div>
+        
+             
         </section>
+        
         
         
         <!-- jalus --->
