@@ -1,238 +1,106 @@
-<!doctype html>
-
-<!-- BOOTSTRAPI KOOD KOMMENTAARIDEGA -->
-<!-- Tavaline HTML luustik-->
-<!-- Lisatakse kõigele kindlad klassid -->
-
-
-<html lang="ee">
-    
+<!DOCTYPE html>
+<html>
     <head>
         <meta charset="utf-8">
-        <!-- Exploreri jaoks -->
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <!-- Viewport vastutab adaptiivsuse eest -->
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content=""> 
-        <meta name="author" content="">
-        
-        <title>Avaleht</title>
-        
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
-        <!-- minu CSS -->
-        <link rel="stylesheet" href="custom.css">
-        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
     </head>
-    
     <body>
-        
-        
-        <!-- päis --->
-        <!-- padding y külge pidi 2? -->
-        <header class="py-2">
-            <!-- "container-fluid" on terve ekraani laiusega, sisaldab ridu (.row), mis on jaotatud 1-12 veeruks-->
-            <!-- Siin jagatud ".col my-3" (my on margin y telgepidi)-->
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12 my-3 text-center"><a href="index.html"><img src="logo2.png" width="50%"></a></div>              
-                </div>          
-            </div>
-            
-        </header>
-        
-        <!-- navigatsioon -->
-        
-        <!-- .navbar-expand-lg - terve navigatsiooniriba on nähtav ainult suurtel/väga suurtel ekraanidel -->
-        <!-- navbar-light - linkide värv -->
-        <!-- bg-white - taustavärv -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow">
-                    
-            <!-- .navbar-toggler on kipplüliti -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <!-- kõik, mis peab ära kaduma ekraani väiksemaks tehes peab jääma navbar-collapse klassi -->
-            <!-- kõik, mis peab ära kaduma ekraani väiksemaks tehes peab jääma navbar-collapse klassi -->
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav mr-auto">
-                    
-                    <li class="nav-item"><a class="nav-link" href="#">Uued tooted</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vannitooted</a> 
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> 
-                            <a class="dropdown-item" href="#">Vannisoolad</a> 
-                            <a class="dropdown-item" href="#">Vannipiimad</a> 
-                            <a class="dropdown-item" href="#">Vannipommid</a>
-                            <a class="dropdown-item" href="list.html">Seebid ja du&scaron;igeelid</a>
-                        </div> 
-                    </li> 
-                    <li class="nav-item dropdown"> 
-                        <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kehahooldus</a> 
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> 
-                            <a class="dropdown-item" href="#">Kehakreemid</a> 
-                            <a class="dropdown-item" href="#">Keha&otilde;lid</a> 
-                            <a class="dropdown-item" href="#">Kehakoorijad</a> 
-                            <a class="dropdown-item" href="#">Deodorandid</a> 
-                            <a class="dropdown-item" href="#">K&auml;te ja jalgade hooldus</a>  
-                        </div> 
-                    </li> 
-                    <li class="nav-item dropdown"> 
-                        <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">N&auml;ohooldus</a> 
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> 
-                            <a class="dropdown-item" href="#">Puhastus ja toniseerimine</a> 
-                            <a class="dropdown-item" href="#">Niisutus ja toitmine</a> 
-                            <a class="dropdown-item" href="#">Koorijad ja maskid</a> 
-                        </div> 
-                   </li>     
-                    <li class="nav-item"><a class="nav-link" href="meist.html">Meist</a></li>
-                </ul>
-                
-                <!-- search -->
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Otsi" aria-label="Search">
-                    <button class="btn btn-outline-white my-2 my-sm-0" type="submit"><svg class="lnr lnr-magnifier"><use xlink:href="#lnr-magnifier"></use></svg></button>
-               </form>
-                
-            </div>
-            
-            <!-- cart -->
-            <!--
-            <svg class="lnr mt-auto mr-3 my-3 lnr-cart"><use xlink:href="#lnr-cart"></use></svg>
-            -->
-            <button class="btn btn-dark my-2 my-sm-0" type="submit"><svg class="lnr lnr-cart"><use xlink:href="#lnr-cart"></use></svg></button>
-            
-        </nav> 
-        
-        
-        <!-- breadcrumb -->
-        <!-- Näitab kasutaja asukohta saidil, esialgu avaleht vaid-->
-        <section>
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb bg-white my-2 ml-2">
-                    
-                    <!-- MAJA это иконка с домиком, но у меня не получилось её выровнять нормально 
-                    <li class="breadcrumb-item active" aria-current="page"><button class="btn btn-link btn-lg my-2 my-sm-0" type="submit"><svg class="lnr lnr-home"><use xlink:href="#lnr-home"></use></svg></button></li>
-                    -->
-                    
-                    <li class="breadcrumb-item active" aria-current="page">Avaleht</li>
-                </ol>
-            </nav>  
-        </section>
-        
-        
-        
-        <!-- jumbotron --->
-        <section>
-            <div class="jumbotron">
-                <h1>Hea külastaja!</h1>
-                <p>23.02.2021-25.02.2021 oleme puhkusel ning seepe ei postita, kuid võtame uued tellimused vastu 26.02 varahommikul.
-                </p>
-                
-                <h4 id="emoji">Head vabariigi aastapäeva! <img src="estonia-flag-heart-3d-icon-32.png"/></h4>
-            </div>
-        </section>
-        
-        
-        <!-- tooted --->
-        <section>
-            <div class="container">
-                <!-- Jagab read kolmeks? St iga osa = 12:3=4 veeruga -->
-                <h2 class="h mb-3">TOP</h2>
-                <!-- igas osas on kaart(card) -->
-                <div class="row"> 
-                    <div class="col-md-4 mb-4"> 
-                        <!-- KAART! --> 
-                        <!-- border-0 kustutab raami, saab raami värvi ja kuju ka -->
-                        <!-- h-100 teeb võrdseks vanem-elemendi kõrgusega -->
-                        <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt="" class="card-img-top"></a> 
-                            <div class="card-body"> 
-                                <h5> <a href="#" class="text-dark">Toode 1</a></h5>
-                                <p class="text-muted card-text"> 15.99&#8364;</p> 
-                                <a role="button" href="#" class="btn btn-outline-dark">Vaata</a>
-                            </div> 
-                        </div> 
-                    </div> 
-                    <div class="col-md-4 mb-4"> 
-                        <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt="" class="card-img-top"></a> 
-                            <div class="card-body"> 
-                                <h5> <a href="#" class="text-dark">Toode 2</a></h5>
-                                <p class="text-muted card-text"> 12.99&#8364;</p> 
-                                <a role="button" href="#" class="btn btn-outline-dark">Vaata</a>
-                            </div> 
-                        </div> 
-                    </div> 
-                    <div class="col-md-4 mb-4"> 
-                        <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt="" class="card-img-top"></a> 
-                            <div class="card-body"> 
-                                <h5> <a href="#" class="text-dark">Toode 3</a></h5>
-                                <p class="text-muted card-text"> 9.99&#8364;</p> 
-                                <a role="button" href="#" class="btn btn-outline-dark">Vaata</a>
-                            </div> 
-                        </div> 
-                    </div> 
-                    <div class="col-md-4 mb-4"> 
-                        <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt="" class="card-img-top"></a> 
-                            <div class="card-body"> 
-                                <h5> <a href="#" class="text-dark">Toode 4</a></h5>
-                                <p class="text-muted card-text"> 18.99&#8364;</p> 
-                                <a role="button" href="#" class="btn btn-outline-dark">Vaata</a>
-                            </div> 
-                        </div> 
-                    </div> 
-                    <div class="col-md-4 mb-4"> 
-                        <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt="" class="card-img-top"></a> 
-                            <div class="card-body"> 
-                                <h5> <a href="#" class="text-dark">Toode 5</a></h5>
-                                <p class="text-muted card-text"> 1.99&#8364;</p> 
-                                <a role="button" href="#" class="btn btn-outline-dark">Vaata</a>
-                            </div> 
-                        </div> 
+        <main>
+            <section id="section1">
+                <h3>1. osa: Kell</h3>
+                <div id="clock"></div>
+            </section>
+            <hr>
+            <section id="section2">
+                <h3>2. osa: Vormid</h3>
+                <form id="form">
+                    <!-- input field --->
+                    <div id="input-fields">
+                        <div id="first-name">
+                            <label for="fname">Eesnimi:</label>
+                            <input type="text" id="fname" name="fname">
+                        </div>
+                        <div id="last-name">
+                            <label for="lname">Perekonnanimi:</label>
+                            <input type="text" id="lname" name="lname">
+                        </div>
                     </div>
-                    <div class="col-md-4 mb-4"> 
-                        <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt="" class="card-img-top"></a> 
-                            <div class="card-body"> 
-                                <h5> <a href="#" class="text-dark">Toode 6</a></h5>
-                                <p class="text-muted card-text"> 5.99&#8364;</p> 
-                                <a role="button" href="#" class="btn btn-outline-dark">Vaata</a>
-                            </div> 
-                        </div> 
+                    <!-- checkbox --->
+                    <div id="form-checkbox">
+                        <div class="box">
+                            <input type="checkbox" id="v1" name="v1" value="present">
+                            <label for="vehicle1"> See on kingitus</label> <!-- 5€ --->
+                        </div>
+                        <div class="box">
+                            <input type="checkbox" id="v2" name="v2" value="contactless">
+                            <label for="vehicle2"> Soovin kontaktivaba tarnet</label> <!-- 1€ --->
+                        </div>    
                     </div> 
+                    <!-- dropdown --->
+                    <div id="dropdown">
+                        <label for="linn">Valige linn: </label>
+                        <select name="linn" id="linn">
+                            <option value="">- Valige linn -</option> 
+                            <option value="tln">Tallinn</option> <!-- 0€ --->
+                            <option value="trt">Tartu</option> <!-- 2.5€ --->
+                            <option value="nrv">Narva</option> <!-- 2.5€ --->
+                            <option value="prn">P&auml;rnu</option> <!-- 3€ --->
+                        </select>
+                    </div>
+                    
+                    <div id="calc">
+                        <input type="submit" value="Arvuta tarne hind:" id="btn-delivery">   
+                    </div>
+                    
+                    <div id="delivery"></div>
+                    
+                    
+                    
+                <!--    <div id="radiobutton">-->
+                    <fieldset>
+                        
+                        <label for="kuller">
+                        <p>Palun valige sobiv kulleri tulemise kellaaeg: </p></label>
+                    
+                        <div id="kuller">
+                            <div>
+                                 <!--Et checkiks ainult ühe/korraga, siis sama name -->
+                                <input type="radio" id="kuller1" name="radio" value="8-10">
+                                <label for="kuller1">8-10</label>
+                                <input type="radio" id="kuller2" name="radio" value="12-15">
+                                <label for="kuller2">12-15</label>
+                                <input type="radio" id="kuller3" name="radio"  value="16-20">
+                                <label for="kuller2">16-20</label>
+                                
+                            </div>
+                        </div>
+                        
+                    </fieldset>
+                        
+                   <!-- </div> -->
+                    
+                </form>
+            </section> 
+            <hr>
+            <section id="section3">
+                <h3>3. osa: Kaart</h3>
+                <!-- kuhu kaart paigaldada -->
+                <div id="map"></div>
+                
+                <div id="infobox">
+                    <div class="teade">
+                        Külasta kindlasti <br />
+                        Oru parki!
+                    
+                    </div>
                 </div>
-            </div>
-        </section>
-        
-        
-        <!-- jalus --->
-        <footer class="bg-light">
-            <div class="container-fluid">
-                
-                <div class="row">
-                    
-                    <div class="col-11">
-                        <svg class="lnr lnr-phone"><use xlink:href="#lnr-phone"></use></svg><p> 5555-5555</p>
-                        <svg class="lnr lnr-envelope"><use xlink:href="#lnr-envelope"></use></svg><p>seep@seep.ee</p>
-                    </div>
-                    
-                    <div class="col">
-                        <p>Facebook: <a href="#"><img src="FB-v%C3%A4rviline.png" class="social"></a></p>
-                        <p>Instagram: <a href="#"><img src="Insta-v%C3%A4rviline.png" class="social"></a> </p>
-                        <p>Twitter: <a href="#"><img src="Twitter-v%C3%A4rviline.png" class="social"></a> </p>
-                    </div>
-                    
-                </div>
-                
-            </div>
-        </footer>       
-        
-        <!-- LISATAKSE LÕPPU, sest muidu aeglustab lehe laadimiskiirust -->
-        <!-- jQuery, Popper.js, Bootstrap JS -->
-        
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        
-        <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
-  </body>
+            </section>
+        </main>
+        <script type='text/javascript' src="script.js"></script>
+        <!-- VÕTI SCRIPTINA HTML LÕPUS-->
+        <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=[AuWaZIh-nisdm3W7slIx8wp48aQh6RoZZXQDCwUtQe8SNS5X3w8XIKrqm8w5xP8V]' async defer></script>
+    </body>
 </html>
